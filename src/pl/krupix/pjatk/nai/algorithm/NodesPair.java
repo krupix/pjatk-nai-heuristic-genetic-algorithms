@@ -13,6 +13,8 @@ public class NodesPair {
 
     static Logger log = Logger.getLogger(NodesPair.class);
 
+    private static String ZERO_BITS = "0";
+
     private Node node1, node2;
 
     public NodesPair(Node node1, Node node2) {
@@ -26,14 +28,13 @@ public class NodesPair {
 
         log.debug("doCross? " + doCross);
 
-        // TODO: Only about 20-50% has to be crossing-over
         if (doCross > 2) {
 
             String node1Dec = "" + node1.getAttribute("tmp_color");
             String node2Dec = "" + node2.getAttribute("tmp_color");
 
-            String node1Bits = "00" + Integer.toBinaryString(Integer.parseInt(node1Dec));
-            String node2Bits = "00" + Integer.toBinaryString(Integer.parseInt(node2Dec));
+            String node1Bits = ZERO_BITS + Integer.toBinaryString(Integer.parseInt(node1Dec));
+            String node2Bits = ZERO_BITS + Integer.toBinaryString(Integer.parseInt(node2Dec));
 
             int lengthDiff = node1Bits.length() - node2Bits.length();
 

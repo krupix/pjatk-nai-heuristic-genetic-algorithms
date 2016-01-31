@@ -19,7 +19,8 @@ public class GeneticAlgorithmImpl implements Algorithm {
 
     static Logger log = Logger.getLogger(GeneticAlgorithmImpl.class);
 
-    private static String ZERO_BITS = "00";
+    private static String ZERO_BITS = "0";
+    private static int MUTATE_CHANCE = 100;
 
     private Graph graph;
     private ArrayList<Node> populationList;
@@ -60,8 +61,8 @@ public class GeneticAlgorithmImpl implements Algorithm {
         for (Node node : graph.getEachNode()) {
             if (new Random().nextInt(2) == 1) {
                 populationList.add(node);
-//                TODO : remove form here mtutate
-                if (new Random().nextInt(100) == 1) {
+
+                if (new Random().nextInt(MUTATE_CHANCE) == 1) {
                     mutate(node);
                 } else {
                     node.setAttribute("tmp_color", node.getAttribute("color"));

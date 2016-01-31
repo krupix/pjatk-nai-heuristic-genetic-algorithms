@@ -20,6 +20,8 @@ public class AlgorithmExecutor {
     private String styleSheet = "node {" + " fill-color: black;" + "}" + "node.marked {" + " fill-color: red;" + "}";
     private Graph graph;
 
+    private static int ALGORITHM_STEPS = 100;
+
 
     public AlgorithmExecutor() {
         init();
@@ -55,9 +57,9 @@ public class AlgorithmExecutor {
 
         HillClimbingAlgorithmImpl hillClimbing = new HillClimbingAlgorithmImpl();
         hillClimbing.init(graph);
-        hillClimbing.compute();
+        
+            hillClimbing.compute();
 
-        refreshLabels();
 
     }
 
@@ -65,7 +67,8 @@ public class AlgorithmExecutor {
 
         GeneticAlgorithmImpl geneticAlgorithm = new GeneticAlgorithmImpl();
         geneticAlgorithm.init(graph);
-        for (int i = 0; i < 100; i++) {
+
+        for (int i = 0; i < ALGORITHM_STEPS; i++) {
             geneticAlgorithm.compute();
         }
 
