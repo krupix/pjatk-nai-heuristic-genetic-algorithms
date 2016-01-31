@@ -1,6 +1,7 @@
 package pl.krupix.pjatk.nai.algorithm;
 
 import org.apache.log4j.Logger;
+import org.apache.log4j.pattern.IntegerPatternConverter;
 import org.graphstream.graph.Node;
 
 import java.util.Random;
@@ -25,15 +26,18 @@ public class NodesPair {
 
         log.debug("doCross? " + doCross);
 
-// TODO: Only about 20-50% has to be crossing-over
-        if (doCross > 0) {
+        // TODO: Only about 20-50% has to be crossing-over
+        if (doCross > 2) {
 
-            String node1Bits = "00" + node1.getAttribute("tmp_color");
-            String node2Bits = "00" + node2.getAttribute("tmp_color");
+            String node1Dec = "" + node1.getAttribute("tmp_color");
+            String node2Dec = "" + node2.getAttribute("tmp_color");
+
+            String node1Bits = "00" + Integer.toBinaryString(Integer.parseInt(node1Dec));
+            String node2Bits = "00" + Integer.toBinaryString(Integer.parseInt(node2Dec));
 
             int lengthDiff = node1Bits.length() - node2Bits.length();
 
-            log.debug("Length diff: " + lengthDiff + ", node1: " + node1Bits + ", node2: " + node2Bits );
+            log.debug("Length diff: " + lengthDiff + ", node1: " + node1Bits + ", node2: " + node2Bits);
 
             if (lengthDiff > 0) {
                 node2Bits = generateZerosString(lengthDiff) + "" + node2Bits;
@@ -48,8 +52,11 @@ public class NodesPair {
                 changeBitsBetweenNodes(changeBitsPosition, node1Bits, node2Bits);
             }
 
-            node1.setAttribute("tmp_color", Integer.parseInt(node1Bits,2));
-            node2.setAttribute("tmp_color", Integer.parseInt(node2Bits,2));
+            log.debug("Saving tmp_color for: " + node1.getId() + " bits: " + node1Bits + ", dec: " + Integer.parseInt(node1Bits, 2));
+            log.debug("Saving tmp_color for: " + node2.getId() + " bits: " + node2Bits + ", dec: " + Integer.parseInt(node2Bits, 2));
+
+            node1.setAttribute("tmp_color", Integer.parseInt(node1Bits, 2));
+            node2.setAttribute("tmp_color", Integer.parseInt(node2Bits, 2));
 
         }
 
@@ -76,7 +83,7 @@ public class NodesPair {
     public String generateZerosString(int n) {
         String result = "";
 
-        for (int i = 0; i < n; i++ ) {
+        for (int i = 0; i < n; i++) {
             result += "0";
         }
 

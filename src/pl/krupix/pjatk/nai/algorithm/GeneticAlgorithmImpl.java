@@ -40,7 +40,7 @@ public class GeneticAlgorithmImpl implements Algorithm {
 
         crossingOver(populationList);
         ratePopulation(populationList);
-//        TODO
+
         clearRatingAndTmpColorsAttributes();
 
     }
@@ -49,7 +49,7 @@ public class GeneticAlgorithmImpl implements Algorithm {
 
         for (Node node : graph.getEachNode()) {
             int color = node.getAttribute("color");
-            log.debug(color + " in binary " + Integer.toBinaryString(color));
+//            log.debug(color + " in binary " + Integer.toBinaryString(color));
         }
     }
 
@@ -61,7 +61,12 @@ public class GeneticAlgorithmImpl implements Algorithm {
             if (new Random().nextInt(2) == 1) {
                 populationList.add(node);
 //                TODO : remove form here mtutate
-                mutate(node);
+                if (new Random().nextInt(100) == 1) {
+                    mutate(node);
+                } else {
+                    node.setAttribute("tmp_color", node.getAttribute("color"));
+                }
+
             }
         }
 
@@ -78,7 +83,6 @@ public class GeneticAlgorithmImpl implements Algorithm {
         log.debug("Sum of neighbours same colors: " + colorsSum);
 
         calculateNodesRating(colorsSum);
-
         chooseRandomBestNodes(colorsSum);
 
     }
@@ -90,9 +94,12 @@ public class GeneticAlgorithmImpl implements Algorithm {
             int choosenNode = new Random().nextInt(colorSum);
 
             for (Node node : populationList) {
+
                 String tmp_color = "" + node.getAttribute("tmp_color");
-                if (choosenNode <= Integer.parseInt(tmp_color) ) {
-                    node.setAttribute("color", tmp_color);
+
+                if (choosenNode <= Integer.parseInt(tmp_color)) {
+                    log.debug("Saving: " + tmp_color + " as Algorithm ResultColor for : " + node.getId());
+                    node.setAttribute("color", Integer.parseInt(tmp_color));
                 }
             }
 
@@ -125,7 +132,7 @@ public class GeneticAlgorithmImpl implements Algorithm {
 
             }
             colorsSum += sameColorsNodes;
-            log.debug("Node: " + node.getId() + ", (Color: " + node.getAttribute("color") + "), has: " + sameColorsNodes + " neighbours with same colors");
+            log.debug("Node: " + node.getId() + ", (Color: " + node.getAttribute("color") + "), has: " + sameColorsNodes + " neighbours with same colors" + ", tmp_color: " + node.getAttribute("tmp_color"));
         }
 
         return colorsSum;
@@ -139,13 +146,13 @@ public class GeneticAlgorithmImpl implements Algorithm {
     }
 
     private int getNodeRating(Node n, int colorsSum) {
+//
+//        AlgorithmExecutor.printAttriubtes("tmp_color", graph);
 
-        AlgorithmExecutor.printAttriubtes("tmp_color", graph);
+        log.debug("n.getAttribute(\"tmp_color\"): " + n.getAttribute("tmp_color") + " For: " + n.getId());
+        String tmp_color = "" + n.getAttribute("tmp_color");
 
-        log.debug("n.getAttribute(\"tmp_color\"): " + n.getAttribute("tmp_color"));
-        String tmp_color  = "" + n.getAttribute("tmp_color");
-
-        return (Integer.parseInt(tmp_color) * colorsSum) / 100;
+        return 100 - ((Integer.parseInt(tmp_color) * colorsSum) / 100);
     }
 
     private void crossingOver(ArrayList<Node> populationList) {
@@ -186,15 +193,15 @@ public class GeneticAlgorithmImpl implements Algorithm {
 
         int changeBit = chooseBitToChange(binaryColor);
 
-        log.debug("BEFORE: Color: dec: " + color + ", binary: " + binaryColor + ", length: " + binaryColor.length()
+        log.debug(node.getId() + "BEFORE: Color: dec: " + color + ", binary: " + binaryColor + ", length: " + binaryColor.length()
                 + " - will change: " + changeBit);
 
         binaryColor = changeBitColor(binaryColor, changeBit);
         color = Integer.parseInt(binaryColor, 2);
 
-        log.debug(" AFTER: Color: dec: " + color + ", binary: " + binaryColor + ", length: " + binaryColor.length());
+        log.debug(node.getId() + " AFTER: Color: dec: " + color + ", binary: " + binaryColor + ", length: " + binaryColor.length());
 
-        node.setAttribute("tmp_color", Integer.toBinaryString(color));
+        node.setAttribute("tmp_color", color);
 
 
     }

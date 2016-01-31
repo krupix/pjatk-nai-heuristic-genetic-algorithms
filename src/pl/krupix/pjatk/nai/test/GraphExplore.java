@@ -64,7 +64,6 @@ public class GraphExplore {
 //        g.display();
 
 
-
         g.setAutoCreate(true);
         g.setStrict(false);
         g.display();
@@ -73,7 +72,6 @@ public class GraphExplore {
         HillClimbingAlgorithmImpl hillClimbing = new HillClimbingAlgorithmImpl();
         hillClimbing.init(g);
         hillClimbing.compute();
-
 
 
     }
@@ -104,8 +102,6 @@ public class GraphExplore {
                     "	fill-color: red;" +
                     "}";
 }
-
-
 
 
 //        graph.setAutoCreate(true);

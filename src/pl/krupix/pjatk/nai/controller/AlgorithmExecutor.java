@@ -57,7 +57,6 @@ public class AlgorithmExecutor {
         hillClimbing.init(graph);
         hillClimbing.compute();
 
-
         refreshLabels();
 
     }
@@ -66,10 +65,13 @@ public class AlgorithmExecutor {
 
         GeneticAlgorithmImpl geneticAlgorithm = new GeneticAlgorithmImpl();
         geneticAlgorithm.init(graph);
-        geneticAlgorithm.compute();
+        for (int i = 0; i < 100; i++) {
+            geneticAlgorithm.compute();
+        }
+
 
         printAttriubtes("color", graph);
-        printAttriubtes("tmp_color", graph);
+//        printAttriubtes("tmp_color", graph);
 
         refreshLabels();
 
@@ -78,7 +80,7 @@ public class AlgorithmExecutor {
 
     private void resetColors(Graph g) {
         for (Node node : g) {
-            log.info("added color");
+//            log.info("added color");
             node.addAttribute("color", 0);
         }
     }
@@ -94,7 +96,7 @@ public class AlgorithmExecutor {
         log.debug("** GRAPH COLORS **");
 
         for (Node n : graph.getEachNode()) {
-            log.debug(n.getId() + " "+ attribute + ": " + n.getAttribute(attribute));
+            log.debug(n.getId() + " " + attribute + ": " + n.getAttribute(attribute));
         }
 
     }
