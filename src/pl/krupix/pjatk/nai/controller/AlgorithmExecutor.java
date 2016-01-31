@@ -57,9 +57,11 @@ public class AlgorithmExecutor {
 
         HillClimbingAlgorithmImpl hillClimbing = new HillClimbingAlgorithmImpl();
         hillClimbing.init(graph);
-        
-            hillClimbing.compute();
 
+        for (int i = 0; i < ALGORITHM_STEPS; i++) {
+            hillClimbing.compute();
+        }
+        refreshLabels();
 
     }
 
@@ -74,7 +76,6 @@ public class AlgorithmExecutor {
 
 
         printAttriubtes("color", graph);
-//        printAttriubtes("tmp_color", graph);
 
         refreshLabels();
 

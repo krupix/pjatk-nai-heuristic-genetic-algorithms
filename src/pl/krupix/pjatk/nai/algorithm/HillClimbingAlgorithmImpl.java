@@ -32,14 +32,16 @@ public class HillClimbingAlgorithmImpl implements Algorithm {
     @Override
     public void compute() {
 
+        int startNode = new Random().nextInt(graph.getNodeCount());
 
-        Node node = graph.getNode(START_NODE);
+        Node node = graph.getNode(startNode);
 
-        for (int i = 0; i < ALGORITHM_STEPS; i++) {
+        Node nextNode;
+
+        do {
             log.info("****************");
             log.info("try for: " + node.getId());
             node.setAttribute("ui.class", "marked");
-
 
             color(node);
             try {
@@ -53,10 +55,16 @@ public class HillClimbingAlgorithmImpl implements Algorithm {
             }
 
             node.setAttribute("ui.class", "");
-            node = chooseNext(node);
+            nextNode = chooseNext(node);
+
+            if (nextNode.getId().equals(node.getId())) {
+                break;
+            } else {
+                node = nextNode;
+            }
 
 
-        }
+        } while (true);
 
 
     }
@@ -103,8 +111,11 @@ public class HillClimbingAlgorithmImpl implements Algorithm {
 
             int neighbourNodeColor = node.getAttribute("color");
 
-            if (neighbourNodeColor == -1 || neighbourNodeColor >= (int) node.getAttribute("color")) {
+            if (neighbourNodeColor > (int) node.getAttribute("color")) {
                 return node;
+            } else {
+                log.info("NOTHING TO DO! Finish algorithm ");
+                return n;
             }
         }
 
