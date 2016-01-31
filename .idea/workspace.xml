@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7e1f943-7b0f-4b3f-90c7-97ded041213e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/controller/ReportBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/controller/ReportGenerator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/graph/GraphGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pjatk-nai-project2/pl/krupix/pjatk/nai/algorithm/GeneticAlgorithmImpl.class" afterPath="$PROJECT_DIR$/out/production/pjatk-nai-project2/pl/krupix/pjatk/nai/algorithm/GeneticAlgorithmImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pjatk-nai-project2/pl/krupix/pjatk/nai/algorithm/HillClimbingAlgorithmImpl.class" afterPath="$PROJECT_DIR$/out/production/pjatk-nai-project2/pl/krupix/pjatk/nai/algorithm/HillClimbingAlgorithmImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pjatk-nai-project2/pl/krupix/pjatk/nai/algorithm/NodesPair.class" afterPath="$PROJECT_DIR$/out/production/pjatk-nai-project2/pl/krupix/pjatk/nai/algorithm/NodesPair.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pjatk-nai-project2/pl/krupix/pjatk/nai/controller/AlgorithmExecutor.class" afterPath="$PROJECT_DIR$/out/production/pjatk-nai-project2/pl/krupix/pjatk/nai/controller/AlgorithmExecutor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pjatk-nai-project2/pl/krupix/pjatk/nai/main/Main.class" afterPath="$PROJECT_DIR$/out/production/pjatk-nai-project2/pl/krupix/pjatk/nai/main/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/algorithm/GeneticAlgorithmImpl.java" afterPath="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/algorithm/GeneticAlgorithmImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/algorithm/HillClimbingAlgorithmImpl.java" afterPath="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/algorithm/HillClimbingAlgorithmImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/algorithm/NodesPair.java" afterPath="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/algorithm/NodesPair.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/controller/AlgorithmExecutor.java" afterPath="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/controller/AlgorithmExecutor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/main/Main.java" afterPath="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/main/Main.java" />
     </list>
     <ignored path="pjatk-nai-project2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,24 +44,24 @@
     <favorites_list name="pjatk-nai-project2" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5190184">
+    <splitter split-orientation="horizontal" split-proportion="0.45398772">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="GeneticAlgorithmImpl.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="GeneticAlgorithmImpl.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/pl/krupix/pjatk/nai/algorithm/GeneticAlgorithmImpl.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="209" column="28" selection-start-line="209" selection-start-column="19" selection-end-line="209" selection-end-column="28" />
+                <state vertical-scroll-proportion="-0.13061652">
+                  <caret line="118" column="35" selection-start-line="118" selection-start-column="35" selection-end-line="118" selection-end-column="35" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#801#802#0" expanded="true" />
                     <element signature="e#835#836#0" expanded="true" />
                     <element signature="e#1453#1459#0" expanded="true" />
-                    <element signature="e#4523#4534#0" expanded="true" />
-                    <element signature="e#6389#6390#0" expanded="true" />
-                    <element signature="e#6453#6454#0" expanded="true" />
-                    <element signature="e#6510#6511#0" expanded="true" />
-                    <element signature="e#6579#6580#0" expanded="true" />
+                    <element signature="e#4527#4538#0" expanded="true" />
+                    <element signature="e#6395#6396#0" expanded="true" />
+                    <element signature="e#6459#6460#0" expanded="true" />
+                    <element signature="e#6516#6517#0" expanded="true" />
+                    <element signature="e#6585#6586#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -58,23 +70,21 @@
           <file leaf-file-name="NodesPair.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pl/krupix/pjatk/nai/algorithm/NodesPair.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-4.4444447">
-                  <caret line="15" column="42" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="42" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state vertical-scroll-proportion="-1.6666666">
+                  <caret line="3" column="32" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="32" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="HillClimbingAlgorithmImpl.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="HillClimbingAlgorithmImpl.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pl/krupix/pjatk/nai/algorithm/HillClimbingAlgorithmImpl.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.524207">
-                  <caret line="116" column="58" selection-start-line="116" selection-start-column="58" selection-end-line="116" selection-end-column="58" />
+                <state vertical-scroll-proportion="-20.925926">
+                  <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#2951#2957#0" expanded="true" />
+                    <element signature="e#2957#2963#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -84,23 +94,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="GraphExplore.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pl/krupix/pjatk/nai/test/GraphExplore.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pl/krupix/pjatk/nai/main/Main.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+                  <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -111,10 +109,59 @@
           <file leaf-file-name="AlgorithmExecutor.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/pl/krupix/pjatk/nai/controller/AlgorithmExecutor.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.32387313">
-                  <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+                <state vertical-scroll-proportion="0.18808778">
+                  <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#4934#4935#0" expanded="true" />
+                    <element signature="e#4959#4960#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ReportGenerator.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pl/krupix/pjatk/nai/controller/ReportGenerator.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="99" column="49" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#591#592#0" expanded="true" />
+                    <element signature="e#647#648#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/log4j.properties">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="0" column="22" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ReportBean.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pl/krupix/pjatk/nai/controller/ReportBean.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+                  <folding>
+                    <element signature="e#492#493#0" expanded="true" />
+                    <element signature="e#528#529#0" expanded="true" />
+                    <element signature="e#583#584#0" expanded="true" />
+                    <element signature="e#633#634#0" expanded="true" />
+                    <element signature="e#674#675#0" expanded="true" />
+                    <element signature="e#714#715#0" expanded="true" />
+                    <element signature="e#777#778#0" expanded="true" />
+                    <element signature="e#835#836#0" expanded="true" />
+                    <element signature="e#877#878#0" expanded="true" />
+                    <element signature="e#915#916#0" expanded="true" />
+                    <element signature="e#977#978#0" expanded="true" />
+                    <element signature="e#1031#1032#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -157,15 +204,21 @@
         <option value="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/GraphExplorer.java" />
         <option value="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/GraphExplore.java" />
         <option value="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/graph/SimpleTestGraph.java" />
-        <option value="$PROJECT_DIR$/log4j.properties" />
         <option value="/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/lang/NumberFormatException.java" />
         <option value="/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/lang/Integer.java" />
         <option value="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/test/GraphExplore.java" />
+        <option value="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/graph/GraphGenerator.java" />
+        <option value="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/algorithm/HillClimbingAlgorithmImpl.java" />
         <option value="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/algorithm/NodesPair.java" />
         <option value="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/algorithm/GeneticAlgorithmImpl.java" />
+        <option value="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/controller/Raport.java" />
+        <option value="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/controller/RaportBean.java" />
+        <option value="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/controller/RaportGenerator.java" />
+        <option value="$PROJECT_DIR$/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/controller/ReportBean.java" />
+        <option value="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/controller/ReportGenerator.java" />
         <option value="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/main/Main.java" />
         <option value="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/controller/AlgorithmExecutor.java" />
-        <option value="$PROJECT_DIR$/src/pl/krupix/pjatk/nai/algorithm/HillClimbingAlgorithmImpl.java" />
       </list>
     </option>
   </component>
@@ -354,8 +407,18 @@
               <option name="myItemId" value="nai" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
+              <option name="myItemId" value="pjatk-nai-project2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pjatk-nai-project2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -369,7 +432,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="graphs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -933,12 +996,12 @@
       <option name="number" value="Default" />
       <updated>1453751791763</updated>
       <workItem from="1453751795324" duration="2995000" />
-      <workItem from="1453929586801" duration="37392000" />
+      <workItem from="1453929586801" duration="42765000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40387000" />
+    <option name="totallyTimeSpent" value="45760000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -957,11 +1020,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905138" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32806325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22233202" sideWeight="0.5021299" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22233202" sideWeight="0.5021299" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38043478" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3389328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52272725" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3389328" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13205537" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1027,14 +1090,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17830609">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/lang/NumberFormatException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7312253">
@@ -1065,7 +1120,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/krupix/pjatk/nai/test/GraphExplore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.30421218">
           <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1073,10 +1128,106 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/krupix/pjatk/nai/graph/GraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/krupix/pjatk/nai/algorithm/HillClimbingAlgorithmImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.925926">
+          <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2957#2963#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/krupix/pjatk/nai/algorithm/NodesPair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6666666">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphs/le450_25b.col">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5759599">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="22" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/krupix/pjatk/nai/algorithm/GeneticAlgorithmImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.13061652">
+          <caret line="118" column="35" selection-start-line="118" selection-start-column="35" selection-end-line="118" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#835#836#0" expanded="true" />
+            <element signature="e#1453#1459#0" expanded="true" />
+            <element signature="e#4527#4538#0" expanded="true" />
+            <element signature="e#6395#6396#0" expanded="true" />
+            <element signature="e#6459#6460#0" expanded="true" />
+            <element signature="e#6516#6517#0" expanded="true" />
+            <element signature="e#6585#6586#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/krupix/pjatk/nai/controller/ReportBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+          <folding>
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#633#634#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#835#836#0" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
+            <element signature="e#1031#1032#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/krupix/pjatk/nai/controller/ReportGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="99" column="49" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/krupix/pjatk/nai/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1085,49 +1236,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/krupix/pjatk/nai/controller/AlgorithmExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32387313">
-          <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.18808778">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/krupix/pjatk/nai/algorithm/NodesPair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4444447">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/krupix/pjatk/nai/algorithm/GeneticAlgorithmImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="209" column="28" selection-start-line="209" selection-start-column="19" selection-end-line="209" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#801#802#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#1453#1459#0" expanded="true" />
-            <element signature="e#4523#4534#0" expanded="true" />
-            <element signature="e#6389#6390#0" expanded="true" />
-            <element signature="e#6453#6454#0" expanded="true" />
-            <element signature="e#6510#6511#0" expanded="true" />
-            <element signature="e#6579#6580#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/krupix/pjatk/nai/algorithm/HillClimbingAlgorithmImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.524207">
-          <caret line="116" column="58" selection-start-line="116" selection-start-column="58" selection-end-line="116" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2951#2957#0" expanded="true" />
+            <element signature="e#4934#4935#0" expanded="true" />
+            <element signature="e#4959#4960#0" expanded="true" />
           </folding>
         </state>
       </provider>

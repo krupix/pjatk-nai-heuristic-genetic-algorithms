@@ -99,7 +99,7 @@ public class GeneticAlgorithmImpl implements Algorithm {
                 String tmp_color = "" + node.getAttribute("tmp_color");
 
                 if (choosenNode <= Integer.parseInt(tmp_color)) {
-                    log.debug("Saving: " + tmp_color + " as Algorithm ResultColor for : " + node.getId());
+//                    log.debug("Saving: " + tmp_color + " as Algorithm ResultColor for : " + node.getId());
                     node.setAttribute("color", Integer.parseInt(tmp_color));
                 }
             }
@@ -150,7 +150,7 @@ public class GeneticAlgorithmImpl implements Algorithm {
 //
 //        AlgorithmExecutor.printAttriubtes("tmp_color", graph);
 
-        log.debug("n.getAttribute(\"tmp_color\"): " + n.getAttribute("tmp_color") + " For: " + n.getId());
+//        log.debug("n.getAttribute(\"tmp_color\"): " + n.getAttribute("tmp_color") + " For: " + n.getId());
         String tmp_color = "" + n.getAttribute("tmp_color");
 
         return 100 - ((Integer.parseInt(tmp_color) * colorsSum) / 100);
@@ -166,7 +166,7 @@ public class GeneticAlgorithmImpl implements Algorithm {
         ArrayList<NodesPair> nodesPairsList = new ArrayList<NodesPair>();
 
         int pairsCount = populationList.size();
-        log.debug("Paris count: " + pairsCount);
+//        log.debug("Paris count: " + pairsCount);
 
         if (pairsCount % 2 != 0) {
             pairsCount--;

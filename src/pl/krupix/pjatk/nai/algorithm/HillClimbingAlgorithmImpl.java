@@ -74,7 +74,7 @@ public class HillClimbingAlgorithmImpl implements Algorithm {
         boolean isNotUse = true;
         int color = -1;
 
-        log.debug("CHOOSE COLOR");
+//        log.debug("CHOOSE COLOR");
 
         while(true) {
 
@@ -97,13 +97,13 @@ public class HillClimbingAlgorithmImpl implements Algorithm {
         }
 
         node.setAttribute("color", color);
-        log.info("For node id: " + node.getId() + " set color: " + color);
+//        log.info("For node id: " + node.getId() + " set color: " + color);
     }
 
 
     public Node chooseNext(Node n) {
 
-        log.debug("CHOOSE NEXT");
+//        log.debug("CHOOSE NEXT");
 
         ArrayList<Node> neighbourList = generateRandomNeighboursList(n);
 
@@ -140,7 +140,7 @@ public class HillClimbingAlgorithmImpl implements Algorithm {
 
         long seed = System.nanoTime();
         Collections.shuffle(randomList, new Random(seed));
-        log.debug(randomList);
+//        log.debug(randomList);
         return randomList;
     }
 

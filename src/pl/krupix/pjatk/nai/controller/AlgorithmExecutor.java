@@ -8,6 +8,7 @@ import org.graphstream.graph.Node;
 import org.graphstream.graph.implementations.SingleGraph;
 import pl.krupix.pjatk.nai.algorithm.GeneticAlgorithmImpl;
 import pl.krupix.pjatk.nai.algorithm.HillClimbingAlgorithmImpl;
+import pl.krupix.pjatk.nai.graph.GraphGenerator;
 
 /**
  * Created by krupix on 30.01.2016.
@@ -19,8 +20,9 @@ public class AlgorithmExecutor {
 
     private String styleSheet = "node {" + " fill-color: black;" + "}" + "node.marked {" + " fill-color: red;" + "}";
     private Graph graph;
+    private ReportGenerator rg;
 
-    private static int ALGORITHM_STEPS = 100;
+    private static int ALGORITHM_STEPS = 1000;
 
 
     public AlgorithmExecutor() {
@@ -29,6 +31,38 @@ public class AlgorithmExecutor {
 
     private void init() {
 
+        generateFromFile();
+//        generateFromGenerators();
+
+    }
+
+    private void generateFromFile() {
+
+        GraphGenerator graphGenerator = new GraphGenerator();
+        graph = graphGenerator.loadFromFile("/Users/krupix/KruPiX/dev/git/pjatk-nai-project2/graphs/le450_5a.col");
+//        graph = graphGenerator.loadFromFile("/Users/krupix/KruPiX/dev/git/pjatk-nai-project2/graphs/le450_5b.col");
+//        graph = graphGenerator.loadFromFile("/Users/krupix/KruPiX/dev/git/pjatk-nai-project2/graphs/le450_5c.col");
+//        graph = graphGenerator.loadFromFile("/Users/krupix/KruPiX/dev/git/pjatk-nai-project2/graphs/le450_5d.col");
+//        graph = graphGenerator.loadFromFile("/Users/krupix/KruPiX/dev/git/pjatk-nai-project2/graphs/le450_15b.col");
+//        graph = graphGenerator.loadFromFile("/Users/krupix/KruPiX/dev/git/pjatk-nai-project2/graphs/le450_15c.col");
+//        graph = graphGenerator.loadFromFile("/Users/krupix/KruPiX/dev/git/pjatk-nai-project2/graphs/le450_15d.col");
+//        graph = graphGenerator.loadFromFile("/Users/krupix/KruPiX/dev/git/pjatk-nai-project2/graphs/le450_25a.col");
+//        graph = graphGenerator.loadFromFile("/Users/krupix/KruPiX/dev/git/pjatk-nai-project2/graphs/le450_25b.col");
+//        graph = graphGenerator.loadFromFile("/Users/krupix/KruPiX/dev/git/pjatk-nai-project2/graphs/le450_25c.col");
+//        graph = graphGenerator.loadFromFile("/Users/krupix/KruPiX/dev/git/pjatk-nai-project2/graphs/le450_25d.col");
+//        graph = graphGenerator.loadFromFile("/Users/krupix/KruPiX/dev/git/pjatk-nai-project2/graphs/games120.col");
+
+        graph.addAttribute("ui.stylesheet", styleSheet);
+        graph.setAutoCreate(true);
+        graph.setStrict(false);
+
+        resetColors(graph);
+        addLabels(graph);
+
+//        graph.display();
+    }
+
+    private void generateFromGenerators() {
         graph = new SingleGraph("nai");
         graph.addAttribute("ui.stylesheet", styleSheet);
         graph.setAutoCreate(true);
@@ -48,7 +82,9 @@ public class AlgorithmExecutor {
         addLabels(graph);
 
         bt.end();
-        graph.display();
+//        graph.display();
+
+
 
     }
 
@@ -58,8 +94,12 @@ public class AlgorithmExecutor {
         HillClimbingAlgorithmImpl hillClimbing = new HillClimbingAlgorithmImpl();
         hillClimbing.init(graph);
 
+        rg = new ReportGenerator(graph);
+        rg.generateReport(graph);
+
         for (int i = 0; i < ALGORITHM_STEPS; i++) {
             hillClimbing.compute();
+            rg.generateReport(graph);
         }
         refreshLabels();
 
@@ -70,8 +110,12 @@ public class AlgorithmExecutor {
         GeneticAlgorithmImpl geneticAlgorithm = new GeneticAlgorithmImpl();
         geneticAlgorithm.init(graph);
 
+        rg = new ReportGenerator(graph);
+        rg.generateReport(graph);
+
         for (int i = 0; i < ALGORITHM_STEPS; i++) {
             geneticAlgorithm.compute();
+            rg.generateReport(graph);
         }
 
 
@@ -109,5 +153,10 @@ public class AlgorithmExecutor {
         for (Node n : graph) {
             n.addAttribute("ui.label", n.getAttribute("color") + "  " + n.getId());
         }
+    }
+
+
+    public ReportGenerator getRg() {
+        return rg;
     }
 }
