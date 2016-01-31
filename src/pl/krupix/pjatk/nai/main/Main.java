@@ -14,7 +14,8 @@ public class Main {
         PropertyConfigurator.configure(log4jConfPath);
 
         AlgorithmExecutor algorithmExecutor = new AlgorithmExecutor();
-        algorithmExecutor.executeAlgorithm();
+//        algorithmExecutor.executeHillClimbingAlgorithm();
 
+        algorithmExecutor.executeGeneticAlgorithm();
     }
 }

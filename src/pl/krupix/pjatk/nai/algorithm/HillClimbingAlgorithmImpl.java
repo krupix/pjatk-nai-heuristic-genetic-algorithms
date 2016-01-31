@@ -17,8 +17,12 @@ public class HillClimbingAlgorithmImpl implements Algorithm {
 
     static Logger log = Logger.getLogger(HillClimbingAlgorithmImpl.class);
 
-
     private Graph graph;
+
+    private static int DELAY = 30;
+    private static int ALGORITHM_STEPS = 1000;
+    private static int START_NODE = 0;
+
 
     @Override
     public void init(Graph graph) {
@@ -29,9 +33,9 @@ public class HillClimbingAlgorithmImpl implements Algorithm {
     public void compute() {
 
 
-        Node node = graph.getNode(0);
+        Node node = graph.getNode(START_NODE);
 
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < ALGORITHM_STEPS; i++) {
             log.info("****************");
             log.info("try for: " + node.getId());
             node.setAttribute("ui.class", "marked");
@@ -39,7 +43,7 @@ public class HillClimbingAlgorithmImpl implements Algorithm {
 
             color(node);
             try {
-                Thread.sleep(30);
+                Thread.sleep(DELAY);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
