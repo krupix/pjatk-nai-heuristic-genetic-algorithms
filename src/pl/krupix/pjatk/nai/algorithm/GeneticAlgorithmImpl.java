@@ -20,4 +20,5 @@ public class GeneticAlgorithmImpl implements Algorithm {
     public void compute() {
 
     }
+
 }
