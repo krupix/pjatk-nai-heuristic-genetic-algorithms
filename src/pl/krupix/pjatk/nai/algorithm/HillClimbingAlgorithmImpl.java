@@ -97,7 +97,7 @@ public class HillClimbingAlgorithmImpl implements Algorithm {
 
         for (Node node : neighbourList) {
 
-            int neighbourNodeColor = node.getAttribute("color");
+                int neighbourNodeColor = node.getAttribute("color");
 
             if (neighbourNodeColor == -1 || neighbourNodeColor >= (int) node.getAttribute("color")) {
                 return node;

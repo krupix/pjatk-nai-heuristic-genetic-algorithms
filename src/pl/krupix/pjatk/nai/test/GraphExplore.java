@@ -32,24 +32,24 @@ public class GraphExplore {
 
         graph.addAttribute("ui.stylesheet", styleSheet);
 
-//        Generator bt = new LobsterGenerator();
+        Generator bt = new PreferentialAttachmentGenerator();
         Graph g = new MultiGraph("lol");
-//        bt.addSink(g);
-//        bt.begin();
+        bt.addSink(g);
+        bt.begin();
 
-//        for (int i = 0; i < 20; i++) {
-//            bt.nextEvents();
-//        }
+        for (int i = 0; i < 20; i++) {
+            bt.nextEvents();
+        }
 
         g.setAutoCreate(true);
         g.setStrict(false);
-        g.addEdge("AB", "A", "B");
-        g.addEdge("BC", "B", "C");
-        g.addEdge("CA", "C", "A");
-        g.addEdge("AD", "A", "D");
-        g.addEdge("DE", "D", "E");
-        g.addEdge("DF", "D", "F");
-        g.addEdge("EF", "E", "F");
+//        g.addEdge("AB", "A", "B");
+//        g.addEdge("BC", "B", "C");
+//        g.addEdge("CA", "C", "A");
+//        g.addEdge("AD", "A", "D");
+//        g.addEdge("DE", "D", "E");
+//        g.addEdge("DF", "D", "F");
+//        g.addEdge("EF", "E", "F");
 
 
         g.addAttribute("ui.stylesheet", styleSheet);
@@ -63,9 +63,7 @@ public class GraphExplore {
 
 //        g.display();
 
-        for (Node node : g) {
-            node.addAttribute("ui.label", node.getAttribute("color") + " " + node.getId());
-        }
+
 
         g.setAutoCreate(true);
         g.setStrict(false);
